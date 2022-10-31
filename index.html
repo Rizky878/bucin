@@ -1,30 +1,37 @@
-<html>
-<head>
-<title> Bucin tros </title>
-</head>
-<body>
-<center>
-<h1> Hai crush akuu <3 </h1>
-<img src="link gif"/>
-<p id="mau_btn">isi sendiri co lupa</p>
-<button onclick="mau(this)">Mauu</button>
-<button onclick="gamau(this)" style="position: absolute;">Gamau, Kamu jelek</button>
-</center>
-</body>
-<script>
-const mau = document.getElementById("mau_btn")
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1, initial-scale=1.0" />
+    <title>Haii Kamu!</title>
+  </head>
+  <body>
+    <center>
+    <h1>Hai Crush Akuu <3</h1>
+    <img src="https://media.tenor.com/kaRCm9ELxKgAAAAC/menhera-chan-chibi.gif"/>
+    <h3>
+      Aku Sebenarnya sudah lama memendam rasa ini<br />Jadi Begini singkat
+      cerita kamu mau ga jadi pendamping hidup ku?
+    </h3>
+    <button class="btn_mau" onclick="mau(this)">Mau</button>
+    <button class="btn" onclick="pindah(this)" style="right: 504px; position: absolute">
+      Gamau, Kamu Jelek
+    </button>
+    </center>
+  </body>
+  <script>
+    const button = document.querySelector(".btn_mau");
 
-function gamau(id) {
-id.style.right = Math.floor(Math.random() * 300) + "px"
-id.style.bottom = Math.floor(Math.random() * 400) + "px"
-mau.innerHTML = "Harus Mau! 😡"
-}
-
-function mau(id) {
-alert("Serius nih di terima?🤩")
-alert("ah jadi baper")
-alert("lanjut wa yuu")
-window.location = "https://wa.me/nolu"
-}
-</script>
+    function mau(id) {
+      alert("Makasih Udah Nerima akuuuu <3");
+      alert("Ikhlas ga nih?");
+      alert("Lanjut wa yuu <3")
+      window.location = "https://wa.me/6282387804410";
+    }
+    function pindah(id) {
+      id.style.right = Math.floor(Math.random() * 200) + "px";
+      id.style.bottom = Math.floor(Math.random() * 200) + "px";
+    }
+  </script>
 </html>
