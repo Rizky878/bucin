@@ -10,7 +10,7 @@
     <center>
     <h1>Hai Crush Akuu <3</h1>
     <img src="https://media.tenor.com/kaRCm9ELxKgAAAAC/menhera-chan-chibi.gif"/>
-    <h3>
+    <h3 id="maucuy">
       Aku Sebenarnya sudah lama memendam rasa ini<br />Jadi Begini singkat
       cerita kamu mau ga jadi pendamping hidup ku?
     </h3>
@@ -22,6 +22,7 @@
   </body>
   <script>
     const button = document.querySelector(".btn_mau");
+    const maucuy = document.getElementById("maucuy")
 
     function mau(id) {
       alert("Makasih Udah Nerima akuuuu <3");
@@ -32,6 +33,7 @@
     function pindah(id) {
       id.style.right = Math.floor(Math.random() * 200) + "px";
       id.style.bottom = Math.floor(Math.random() * 200) + "px";
+maucuy.innerHTML = "<b>HARUS MAUUU! 😡</b>";
     }
   </script>
 </html>
