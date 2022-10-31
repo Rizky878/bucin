@@ -1,0 +1,27 @@
+<html>
+<head>
+<title> Bucin tros </title>
+</head>
+<body>
+<h1> Hai crush akuu <3 </h1>
+<img src="link gif"/>
+<p id="mau_btn">isi sendiri co lupa</p>
+<button onclick="mau()">Mauu</button>
+<button onclick="gamau()">Gamau, Kamu jelek</button>
+</body>
+<script>
+const mau = document.getElementById("mau_btn")
+function gamau(id) {
+id.style.top = Math.floor(Math.random() * 300) + 1 + "px"
+id.style.bottom = Math.floor(Math.random() * 400) + "px"
+mau.innerHTML = "Harus Mau! 😡"
+}
+
+function mau(id) {
+alert("Serius nih di terima?🤩")
+alert("ah jadi baper")
+alert("lanjut wa yuu")
+window.location = "https://wa.me/nolu"
+}
+</script>
+</html>
