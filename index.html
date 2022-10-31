@@ -8,13 +8,14 @@
 <img src="link gif"/>
 <p id="mau_btn">isi sendiri co lupa</p>
 <button onclick="mau(this)">Mauu</button>
-<button onclick="gamau(this)" style="right: 504px; position: absolute;">Gamau, Kamu jelek</button>
+<button onclick="gamau(this)" style="position: absolute;">Gamau, Kamu jelek</button>
 </center>
 </body>
 <script>
 const mau = document.getElementById("mau_btn")
+
 function gamau(id) {
-id.style.top = Math.floor(Math.random() * 300) + 1 + "px"
+id.style.right = Math.floor(Math.random() * 300) + "px"
 id.style.bottom = Math.floor(Math.random() * 400) + "px"
 mau.innerHTML = "Harus Mau! 😡"
 }
